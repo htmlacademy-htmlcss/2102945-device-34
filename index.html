@@ -14,126 +14,164 @@
         <a class="navigation-logo" href="/index.html">
           <img src="/images/head.svg" width="145px" height="36px" alt="Device">
         </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
+
+        <div class="header-middle">
+
+          <svg class="search-icon" width="16" height="17" viewBox="0 0 16 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m15.7 14.6889-3.1-3.1c.9-1.2 1.4-2.59998 1.4-4.19998 0-3.9-3.1-7.000004-7-7.000004S0 3.48892 0 7.38892c0 3.89998 3.1 6.99998 7 6.99998 1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.38892c0-2.8 2.2-5 5-5s5 2.2 5 5c0 2.79998-2.2 4.99998-5 4.99998s-5-2.2-5-4.99998Z"
+              fill="#000" />
+          </svg>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="site-search">
-              <svg class="search-icon" width="16" height="17" viewBox="0 0 16 17" fill="none"
+              <input class="field" placeholder="Текст поиска" type="search" name="site-search" id="site-search"
+                required> </label>
+            <button class="search" type="submit">Найти</button>
+          </form>
+
+
+
+
+
+
+          <ul class="navigation-list">
+            <li class="profile">
+              <svg class="enter-icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="m15.7 14.6889-3.1-3.1c.9-1.2 1.4-2.59998 1.4-4.19998 0-3.9-3.1-7.000004-7-7.000004S0 3.48892 0 7.38892c0 3.89998 3.1 6.99998 7 6.99998 1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.38892c0-2.8 2.2-5 5-5s5 2.2 5 5c0 2.79998-2.2 4.99998-5 4.99998s-5-2.2-5-4.99998Z"
+                  d="M0 12.3889h13c-.2-2.59998-2.1-4.79998-4.7-5.49998 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.500004-3.5-3.500004S3 1.98892 3 3.88892c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.49998Z"
                   fill="#000" />
               </svg>
-              <label for="site-search">
-                <input type="search" id="site-search" name="q">
-                <button class="search">Найти</button>
-              </label>
-          </li>
-          <li class="navigation-item">
-            <svg class="enter-icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 12.3889h13c-.2-2.59998-2.1-4.79998-4.7-5.49998 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.500004-3.5-3.500004S3 1.98892 3 3.88892c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.49998Z"
-                fill="#000" />
-            </svg>
-            <a class="navigation-link" href="#">Войти</a>
-          </li>
-          <li class="navigation-item navigation-add">
-            <svg class="diag-icon" width="10" height="13" viewBox="0 0 10 13" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#a)" fill="#000">
+              <a class="navigation-link" href="#">Войти</a>
+            </li>
+          </ul>
+
+          <ul class="site-functions">
+            <li class="site-diag">
+              <svg class="diag-icon" width="10" height="13" viewBox="0 0 10 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)" fill="#000">
+                  <path
+                    d="M6 .388916H4V12.3889h2V.388916ZM2 4.38892H0v7.99998h2V4.38892ZM10 3.38892H8v8.99998h2V3.38892Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" transform="translate(0 .388916)" d="M0 0h10v12H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <a class="navigation-link" href="#">Сравнить</a>
+            </li>
+            <li class="site-bin">
+              <svg class="bin-icon" width="16" height="15" viewBox="0 0 16 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M6 .388916H4V12.3889h2V.388916ZM2 4.38892H0v7.99998h2V4.38892ZM10 3.38892H8v8.99998h2V3.38892Z" />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" transform="translate(0 .388916)" d="M0 0h10v12H0z" />
-                </clipPath>
-              </defs>
-            </svg>
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item navigation-add">
-            <svg class="bin-icon" width="16" height="15" viewBox="0 0 16 15" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="m15.3 5.38892-3.5.2L8.6.688916c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3L4.2 5.58892H.7c-.4 0-.7.3-.7.7v.2l1.9 6.79998c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6.38892v-.2c0-.4-.3-.8-.7-.8Zm-7.3-3.1 2.2 3.2H5.9l2.1-3.2Z"
-                fill="#000" />
-            </svg>
-            <span class="number-order">2</span>
-            <a class="navigation-link" href="#">
-              Корзина
-              </span>
-            </a>
-          </li>
-        </ul>
-        <ul class="navigation-user">
-          <li class="additional-link">
-            <a class="catalog-tovarov">Каталог товаров</a>
-            <svg class="plus-icon" width="16" height="17" viewBox="0 0 16 17" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 7.38892H9V.388916H7V7.38892H0v2h7v6.99998h2V9.38892h7v-2Z" fill="#000" />
-            </svg>
-          </li>
-          <li class="additional-link">
-            <a class="menu-item">Доставка</a>
-          </li>
-          <li class="additional-link">
-            <a class="menu-item">Гарантия</a>
-          </li>
-          <li class="additional-link">
-            <a class="menu-item">Контакты</a>
-          </li>
-        </ul>
-        <div class="number-nav">01</div>
+                  d="m15.3 5.38892-3.5.2L8.6.688916c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3L4.2 5.58892H.7c-.4 0-.7.3-.7.7v.2l1.9 6.79998c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6.38892v-.2c0-.4-.3-.8-.7-.8Zm-7.3-3.1 2.2 3.2H5.9l2.1-3.2Z"
+                  fill="#000" />
+              </svg>
+              <a class="navigation-link" href="#">
+                Корзина
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-bottom">
+
+          <ul class="site-navigation">
+
+            <li class="site-item">
+
+              <a class="menu-item" href="#">Каталог товаров</a>
+              <svg class="plus-icon" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7.38892H9V.388916H7V7.38892H0v2h7v6.99998h2V9.38892h7v-2Z" fill="#000" />
+              </svg>
+              <!-- SUB MENU -->
+              <!-- <ul class="sub-menu">
+                <li class="sub-item">
+                  <a href="#">Виртуальная реальность</a>
+                  <a href="#">Моноподы для cелфи</a>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+                <li class="sub-item">
+                  <a href="#">Фитнес-браслеты </a>
+                  <a href="#">Умные часы</a>
+                </li>
+                <li class="sub-item">
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul> -->
+              <!-- END SUB MENU -->
+            </li>
+            <li class="site-item">
+              <a class="menu-item" href="#">Доставка</a>
+            </li>
+            <li class="site-item">
+              <a class="menu-item" href="#">Гарантия</a>
+            </li>
+            <li class="site-item">
+              <a class="menu-item" href="#">Контакты</a>
+            </li>
+          </ul>
       </nav>
     </header>
+
+
+
     <main class="main-container main-index">
       <div class="page-container">
         <section class="device">
           <div class="slide-picture">
             <img class="drone" src="/images/slider-1.png" widht="560px" height="560px" alt="drone">
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
-
-          <h1>Порхает как бабочка,
-            жалит как пчела!
-          </h1>
-          <p class="device-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартную камеру.
-          </p>
-          <div class="buttons">
-            <a class="button" href="#">Подробнее</a>
-          </div>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current">
-                <span class="visually-hidden">1 фото</span>
+            <div class="slider-controls">
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
               </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 фото</span>
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Следующее фото</span>
               </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>
-          <div class="about-drone">
-            <div class="about-drone-drone">
-              <p class="about-text">800 м</p>
-              <p class="about-text-length">Дальность полета</p>
             </div>
-            <div class="about-drone-drone">
-              <p class="about-text">50м</p>
-              <p class="about-text-length">Радиус поражения</p>
+          </div>
+          <div class="device-about">
+            <h1>Порхает как бабочка,
+              жалит как пчела!
+            </h1>
+            <p class="device-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.
+            </p>
+            <div class="wrapper">
+              <div class="buttons">
+                <a class="button" href="#">Подробнее</a>
+              </div>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
+            <div class="about-drone">
+              <div class="about-drone-drone">
+                <p class="about-text">800 м</p>
+                <p class="about-text-length">Дальность полета</p>
+              </div>
+              <div class="about-drone-drone">
+                <p class="about-text">50м</p>
+                <p class="about-text-length">Радиус поражения</p>
+              </div>
             </div>
           </div>
         </section>
@@ -142,7 +180,8 @@
           <ul class="catalog-list">
             <li class="catalog-items">
               <div class="catalog-picture">
-                <svg class="vr-logo" width="97" height="55" viewBox="0 0 97 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="vr-logo" width="97" height="55" viewBox="0 0 97 55" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M84.1314 32.639V20.003c0-1.309 1.045-2.37 2.335-2.37l8.326 1.581V11.02c0-2.35503-1.708-3.43103-4.202-4.26503L67.4034.174968c1.616 1.391002 1.889 2.040002 1.889 4.396002V49.78c0 2.356-.45 4.066-1.967 5.21l23.265-7.065c2.401-.833 4.202-4.216 4.202-6.572V33.44l-8.326 1.567c-1.29.002-2.335-1.06-2.335-2.368Z"
                     fill="#363636" />
@@ -155,7 +194,8 @@
             </li>
             <li class="catalog-items">
               <div class="catalog-picture">
-                <svg class="monopod-logo" width="87" height="117" viewBox="0 0 87 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="monopod-logo" width="87" height="117" viewBox="0 0 87 117" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M82.821 4.011H3.33003c-1.761 0-3.188001 1.427-3.188001 3.188v46.413c0 1.763 1.427001 3.189 3.188001 3.189H82.822c1.762 0 3.189-1.427 3.189-3.189V7.199c0-1.761-1.428-3.188-3.19-3.188ZM8.39203 37.236h-.226c-1.762 0-3.189-1.429-3.189-3.189v-7.283c0-1.761 1.427-3.188 3.189-3.188h.226v13.66ZM69.623 52.408H13.341V8.402h56.282v44.006ZM78.4 34.552c-2.289 0-4.146-1.855-4.146-4.147 0-2.292 1.856-4.147 4.146-4.147 2.291 0 4.148 1.855 4.148 4.147 0 2.292-1.857 4.147-4.148 4.147ZM54.654 0H31.497v2.758h23.157V0ZM46.608 64.861v-2.973h8.046V59.13H31.498v2.758h8.045v35.246c-2.139.938-3.635 3.072-3.635 5.559V117h14.335v-14.307c0-2.486-1.495-4.621-3.636-5.557v-27.99h4.796l5.051 1.213v-6.711l-5.051 1.213h-4.795Z"
                     fill="#363636" />
@@ -166,7 +206,8 @@
             </li>
             <li class="catalog-items">
               <div class="catalog-picture">
-                <svg class="camera-logo" width="72" height="87" viewBox="0 0 72 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="camera-logo" width="72" height="87" viewBox="0 0 72 87" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M53.349 1.49c0-.736-.578-1.49-1.311-1.49H9.053C8.32 0 7.672.754 7.672 1.49v3.522h45.676l.001-3.522ZM54.202 81.809h-9.597V71.426h-6.958v2.507H18.774c-.537-1.254-1.757-2.148-3.181-2.148H3.559C1.642 71.784 0 73.387 0 75.311v3.018c0 1.924 1.642 3.48 3.559 3.48h12.035c1.511 0 2.792-.896 3.269-2.326h18.785v2.326H28.13c-.533 0-1.01.437-1.01.972v3.172c0 .535.478 1.048 1.01 1.048h26.072c.533 0 .93-.513.93-1.048V82.78c0-.535-.397-.971-.93-.971ZM60.666 12.39c-.861-2.937-3.567-5.05-6.771-5.05H7.148C3.25 7.34 0 10.449 0 14.361v46.9c0 3.912 3.25 7.121 7.148 7.121h46.747c3.898 0 7.126-3.209 7.126-7.121V50.915c6.066-4.204 10.001-11.211 10.001-19.164-.001-8.079-4.132-15.181-10.356-19.361ZM12.238 62.151c-3.259 0-5.901-2.65-5.901-5.921 0-3.27 2.642-5.922 5.901-5.922s5.902 2.652 5.902 5.922c0 3.271-2.643 5.921-5.902 5.921Zm5.961-32.605c0 .786-.635 1.422-1.418 1.422h-8.94c-.783 0-1.418-.637-1.418-1.422v-14.16c0-.786.635-1.423 1.418-1.423h8.939c.783 0 1.418.637 1.418 1.423l.001 14.16Zm29.563 22.312c-11.076 0-20.057-9.01-20.057-20.123 0-11.113 8.98-20.124 20.057-20.124 11.077 0 20.058 9.01 20.058 20.124 0 11.114-8.981 20.123-20.058 20.123Z"
                     fill="#363636" />
@@ -179,7 +220,8 @@
             </li>
             <li class="catalog-items">
               <div class="catalog-picture">
-                <svg class="fitnes-logo" width="108" height="66" viewBox="0 0 108 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="fitnes-logo" width="108" height="66" viewBox="0 0 108 66" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M98.967 5.07411c.752 1.441 1.209 3.08 1.209 4.818V30.9941c0 4.616-3.092 8.527-7.246 9.9-1.325 3.987-3.778 7.854-8.051 10.432-8.676 5.231-31.124 4.837-31.198 4.837-.078 0-22.513.395-31.189-4.837-4.216-2.545-6.708-6.347-8.042-10.279-4.418-1.209-7.756-5.251-7.756-10.053V9.89311c0-1.688.427-3.282 1.139-4.693C4.17 6.10911 0 7.91811 0 11.4341v29.983c0 10.251 11.839 24.433 53.657 24.433 41.82 0 53.657-14.182 53.657-24.433v-29.983c-.001-3.68399-4.576-5.49399-8.347-6.35999Z"
                     fill="#363636" />
@@ -192,7 +234,8 @@
             </li>
             <li class="catalog-items">
               <div class="catalog-picture">
-                <svg class="smart-logo" width="57" height="98" viewBox="0 0 57 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="smart-logo" width="57" height="98" viewBox="0 0 57 98" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M54.494 32.197h-1.515v-4.64c0-5.052-4.087-9.186-9.082-9.186H9.082C4.086 18.372 0 22.505 0 27.557v42.868c0 5.052 4.087 9.185 9.083 9.185h34.815c4.995 0 9.082-4.133 9.082-9.185V67.01h1.515c.415 0 .757-.344.757-.764V52.467c0-.421-.342-.766-.757-.766H52.98v-8.788h1.515c.832 0 1.514-.688 1.514-1.531v-7.654c-.001-.842-.683-1.531-1.515-1.531Zm-20.412-3.109c2.926 0 5.299 2.398 5.299 5.358 0 2.96-2.373 5.358-5.299 5.358s-5.298-2.398-5.298-5.358c0-2.96 2.372-5.358 5.298-5.358Zm-15.137 0c2.925 0 5.298 2.398 5.298 5.358 0 2.96-2.373 5.358-5.298 5.358-2.926 0-5.298-2.398-5.298-5.358 0-2.96 2.372-5.358 5.298-5.358ZM5.297 49.397c0-2.959 2.371-5.358 5.298-5.358 2.926 0 5.298 2.399 5.298 5.358 0 2.959-2.373 5.358-5.298 5.358-2.927.001-5.298-2.399-5.298-5.358Zm13.648 19.497c-2.926 0-5.298-2.398-5.298-5.358 0-2.96 2.372-5.358 5.298-5.358 2.925 0 5.298 2.398 5.298 5.358 0 2.96-2.373 5.358-5.298 5.358Zm1.49-19.903c0-3.382 2.711-6.124 6.055-6.124s6.055 2.742 6.055 6.124c0 3.382-2.711 6.124-6.055 6.124-3.344-.001-6.055-2.742-6.055-6.124Zm13.647 19.903c-2.926 0-5.298-2.398-5.298-5.358 0-2.96 2.372-5.358 5.298-5.358s5.299 2.398 5.299 5.358c0 2.96-2.373 5.358-5.299 5.358Zm8.302-14.138c-2.927 0-5.298-2.399-5.298-5.358 0-2.959 2.371-5.358 5.298-5.358 2.926 0 5.298 2.399 5.298 5.358 0 2.958-2.372 5.358-5.298 5.358ZM9.646 15.31h33.687c.843 0 1.432-.681 1.306-1.514L43.023 3.028s0-.001-.002-.002C42.771 1.362 41.189 0 39.506 0H13.474c-1.686 0-3.268 1.362-3.517 3.028L8.342 13.795c-.125.833.461 1.515 1.304 1.515ZM43.333 82.671H9.646c-.843 0-1.429.683-1.304 1.516l1.615 10.767c.25 1.666 1.832 3.028 3.516 3.028h26.032c1.684 0 3.266-1.362 3.517-3.026v-.002l1.615-10.767c.128-.833-.461-1.516-1.304-1.516Z"
                     fill="#363636" />
@@ -202,7 +245,8 @@
             </li>
             <li class="catalog-items">
               <div class="catalog-picture">
-                <svg class="copter-logo" width="133" height="70" viewBox="0 0 133 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="copter-logo" width="133" height="70" viewBox="0 0 133 70" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.0523.257913C6.50738.745213 1.83838 1.85073.575275 2.93033c-.7227.6162-.7227.6162-.2324 1.1562.6445.7197 3.713405 1.64498 7.247605 2.23628 3.99802.668 12.50982.69341 13.72312.05131 1.2119-.668 1.624-1.41364 1.624-2.98144 0-1.6187-.6191-2.415991-2.2178-2.852491-1.4458-.3859-5.7783-.54017562-8.6675-.282276ZM25.7745.488281c-.1294.2832-.2583 2.107919-.2583 4.111819 0 4.061.1553 3.7783-2.1919 3.9331l-1.0308.0771-.2583 5.0883-1.1865.2832c-2.5791.668-3.999 2.5952-3.7915 5.2944.1279 1.9272 1.0308 3.3408 2.5786 4.0869 1.1089.5132 1.4697.5381 11.2461.5381 5.5449 0 10.1372.0786 10.1885.1807.0508.1284-1.1094 9.4072-2.5796 20.6387-1.4448 11.2305-2.6831 20.9971-2.7085 21.666-.0513 1.6172.8262 2.6211 2.3477 2.6211 1.2373 0 2.0117-.6416 2.3213-1.9014.1294-.5137 1.4956-10.333 3.0181-21.8213 1.522-11.4629 2.8628-20.8687 2.9404-20.8687.103 0 1.083 1.4131 2.1924 3.1357 2.9399 4.626 2.3989 4.3169 7.6353 4.3169h4.3584v5.6298l-5.1328.0771c-4.7202.0771-5.21.127-5.8813.6152-1.5728 1.1572-1.625 1.415-1.625 10.9766 0 9.5342.0264 9.792 1.5225 11.0498l.8511.6953h31.3652l.8506-.6953c1.4961-1.2578 1.5205-1.5156 1.5205-11.0498 0-9.5615-.0508-9.8193-1.623-10.9766-.6709-.4883-1.1611-.5381-5.8818-.6152l-5.1318-.0771v-5.6298h4.3594c5.2344 0 4.6934.3091 7.6338-4.3169 1.1104-1.7227 2.0898-3.1357 2.1934-3.1357.0762 0 1.4189 9.4058 2.9395 20.8687 1.5225 11.4883 2.8896 21.3076 3.0186 21.8213.3096 1.2598 1.082 1.9014 2.3213 1.9014 1.5215 0 2.3994-1.0039 2.3467-2.6211-.0254-.6689-1.2637-10.4355-2.709-21.666-1.4688-11.2314-2.6309-20.5103-2.5781-20.6387.0508-.1021 4.6416-.1807 10.1893-.1807 9.776 0 10.136-.0249 11.244-.5381 1.548-.7461 2.45-2.1597 2.579-4.0869.207-2.6992-1.211-4.6265-3.791-5.2944l-1.187-.2832-.256-5.0883-1.032-.0771c-2.347-.1548-2.194.1279-2.194-3.9331 0-2.0039-.128-3.828619-.256-4.111819C106.045.128381 105.709 0 104.884 0c-.619 0-1.238.128394-1.42.308594-.206.2056-.309 1.465326-.309 3.932126 0 2.4673-.103 3.72708-.31 3.93208-.179.1797-.901.30811-1.649.30811-1.6261 0-1.6515.0522-1.6515 3.11039v2.2871H32.4806v-2.2871c0-3.05809-.0249-3.11039-1.6499-3.11039-.7485 0-1.4702-.12841-1.6504-.30811-.2075-.2051-.3101-1.46478-.3101-3.93208 0-2.4668-.103-3.726626-.3096-3.932126C28.3799.128394 27.7603 0 27.1417 0c-.8247 0-1.1602.128481-1.3672.488281ZM68.6173 40.6084c2.8887.8984 5.3916 3.3926 6.166 6.168.4385 1.543.3096 4.2158-.2842 5.7832-.6963 1.875-2.6846 4.0098-4.5654 4.9355-1.29.6416-1.7539.7188-3.9209.7188-2.1665 0-2.6309-.0771-3.9204-.7188-1.8843-.9258-3.8691-3.0605-4.5659-4.9355-.5928-1.5674-.7227-4.2402-.2837-5.7832.748-2.7236 3.2495-5.2695 6.0615-6.168 2.0122-.6425 3.3003-.6425 5.313 0Z"
                     fill="#363636" />
@@ -217,11 +261,12 @@
         </section>
         <section class="delivery">
           <div class="buttons-delivery">
-            <a class="button active" href="#">Доставка</a>
-            <a class="button" href="#">Гарантия</a>
-            <a class="button" href="#">Кредит</a>
+            <a class="button-active" href="#">Доставка</a>
+            <a class="button-delivery" href="#">Гарантия</a>
+            <a class="button-delivery" href="#">Кредит</a>
           </div>
-          <svg class="bar-logo" width="7" height="319" viewBox="0 0 7 319" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="bar-logo" width="7" height="319" viewBox="0 0 7 319" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill="#000" d="M0 0h7v319H0z" />
           </svg>
           <div class="delivery-inf">
@@ -230,13 +275,14 @@
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <div class="delivery-img">
-              <img src="/images/postman.png" widht="136px" height="164px" alt="postman" >
+              <img src="/images/postman.png" widht="136px" height="164px" alt="postman">
             </div>
           </div>
         </section>
         <section class="rare-delivery">
           <div class="car-delivery">
-            <svg class="car-logo" width="47" height="31" viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="car-logo" width="47" height="31" viewBox="0 0 47 31" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z"
                 fill="#000" />
@@ -248,11 +294,20 @@
           <p class="car-delivery-text">
             Доставим редкий товар под заказ
           </p>
+          <div class="toolip">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity=".5" />
+              <g opacity=".3" fill="#000">
+                <path d="M21 14h-2v2h2v-2ZM21 18h-2v8h2v-8Z" />
+              </g>
+            </svg>
+          </div>
           <!-- modal window -->
         </section>
         <section class="additional-inf">
           <div class="about-us">
-            <svg class="horizont-bar-one" width="84" height="7" viewBox="0 0 84 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="horizont-bar-one" width="84" height="7" viewBox="0 0 84 7" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M84.0001 0H.00006104v7H84.0001V0Z" fill="#000" />
             </svg>
             <h2>О нас</h2>
@@ -276,7 +331,8 @@
           </div>
 
           <div class="contacts">
-            <svg class="horizont-bar-two" width="84" height="7" viewBox="0 0 84 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="horizont-bar-two" width="84" height="7" viewBox="0 0 84 7" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M84.0001 0H.00006104v7H84.0001V0Z" fill="#000" />
             </svg>
             <h2>Контакты</h2>
@@ -314,7 +370,8 @@
                 <span class="visually-hidden">Подписаться</span>
               </button>
             </form>
-            <svg class="green-tick" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="green-tick" width="15" height="14" viewBox="0 0 15 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M14.498 0 4.89805 9.3.498047 5v4.7L4.99805 14 14.498 4.7V0Z" fill="#08AF00" />
             </svg>
             <p>Это бесплатно</p>
@@ -328,7 +385,8 @@
           <span class="visually-hidden">Device</span>
           <p>Санкт-Петербург, набережная
             реки Карповки, 5, литера П.</p>
-          <svg class="footer-bar" width="80" height="7" viewBox="0 0 80 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer-bar" width="80" height="7" viewBox="0 0 80 7" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path d="M80 0H0v7h80V0Z" fill="#FFC700" />
           </svg>
         </section>
@@ -362,8 +420,8 @@
 
         <section class="footer-contacts">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a href=" https://htmlacademy.ru/"><img class="html-academy" src="/images/html.svg" widht="114px" height="32px"
-              alt="htmlacademy"></a>
+          <a href=" https://htmlacademy.ru/"><img class="html-academy" src="/images/html.svg" widht="114px"
+              height="32px" alt="htmlacademy"></a>
         </section>
       </div>
     </footer>
