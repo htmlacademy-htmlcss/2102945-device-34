@@ -178,6 +178,103 @@ body {
   color: rgba(0, 0, 0, .3)
 }
 
+.button-us {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 33px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: left;
+}
+
+.button-us::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 259px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #f0c52e;
+}
+
+.button-about {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: left;
+}
+
+.button-about:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 259px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #f0c52e;
+}
+
+.button-us:hover,
+.button-us:focus,
+.button-about:hover,
+.button-about:focus {
+  background-color: transparent
+}
+
+.button-us:hover::before,
+.button-us:focus::before,
+.button-about:hover::before,
+.button-about:focus::before {
+
+  transform: scaleY(4)
+}
+
+.button-us:active,
+.button-about:active {
+  color: rgba(0, 0, 0, .3)
+}
+
+.button-us:active::before,
+.button-about:active:before {
+  color: rgba(0, 0, 0, .3)
+}
+
+.newsletter-button {
+  position: relative;
+  bottom: 9px;
+  right: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 3px solid #C4C4C4;
+  padding: 18px 39px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -368,7 +465,7 @@ a {
 
 .page-container {
   width: 1160px;
-  margin-left: 140px;
+  /* margin-left: 140px; */
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -380,7 +477,7 @@ a {
 .device {
   display: flex;
   flex-direction: row;
-
+  margin-left: 140px;
 }
 
 .device-about {
@@ -534,6 +631,7 @@ h3 {
   gap: 50px;
   width: 1160px;
   list-style: none;
+  margin-left: 140px;
 }
 
 .catalog-description {
@@ -585,7 +683,8 @@ h3 {
   align-items: center;
   padding: 0px;
   gap: 116px;
-  margin-top:70px;
+  margin-top: 70px;
+  margin-left: 140px;
 }
 
 .buttons-delivery {
@@ -624,7 +723,8 @@ h3 {
   background: #F0F0F0;
   width: 1210px;
   height: 100px;
-  margin-top:70px;
+  margin-top: 70px;
+  margin-left: 140px;
 }
 
 .car-delivery {
@@ -662,40 +762,134 @@ h3 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
 /* about us and contacts */
 .additional-inf {
   display: flex;
   flex-direction: row;
-  margin-top:70px;
-  gap:160px;
+  flex-wrap: nowrap;
+  margin-top: 70px;
+  gap: 160px;
+  margin-left: 140px;
 }
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 520px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 536px;
+}
+
+.horizont-bar-one,
+.horizont-bar-two {
+  margin-bottom: 40px;
+}
+
+.transport-company-name {
+  font-family: 'Rubik bold', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.about-description {
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
+}
+
+.about-description-time {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.about-description-tel {
+  font-family: 'Rubik', sans-serif;
+  text-decoration-line: underline;
+  color: #444444;
+}
+
 /* end about us and contacts */
 
 
 .subscribe {
-
-  margin-top:70px;
+  background: #F0F0F0;
+  margin-top: 70px;
+  padding-left: 140px;
+  width: 1440px;
+  padding-top: 64px;
+  padding-bottom: 56px;
 }
 
-.subscribe-text{
+.subscribe-text {
   display: flex;
   flex-direction: row;
-  width: 1440px;
+  flex-wrap: wrap;
 
+  padding-bottom: 100px;
 }
 
-.subscribe-form{
+.subscribe-title {
+  width: 348px;
+  margin: 0;
+}
+
+.subscribe-info {
+  width: 560px;
+  margin: 0;
+  padding-left: 252px;
+}
+
+.subscribe-form {
+  position: relative;
   display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: 138px;
+  flex-direction: row;
+  align-items: center;
 }
 
+.field-subscribe {
+  position: static;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background: #F0F0F0;
+  padding-left: 40px;
+  width: 557px;
+  height: 40px;
+  color: #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #C4C4C4;
+}
 
+.field-subscribe::placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  opacity: 0.5;
+}
 
+.green-tick {
+  position: absolute;
+  left: 70%;
+}
 
+.subscribe-free {
+  padding-left: 220px;
+}
 
 
 
@@ -714,4 +908,65 @@ gap: 138px;
   line-height: 20px;
   color: #FFFFFF;
   background: #444444;
+  padding-top: 62px;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 140px;
+  gap: 100px;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  padding:55px;
+}
+
+.device-promise {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 35px;
+}
+
+.device-promise-txt {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+  list-style: none;
+  padding
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contacts-address-phone {
+  text-decoration-line: underline;
+padding-bottom:63px;
+
+color: #FFFFFF;
 }
