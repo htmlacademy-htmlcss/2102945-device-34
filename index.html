@@ -201,7 +201,7 @@
                     fill="#363636" />
                 </svg>
               </div>
-              <p class="catalog-description">Моноподы
+              <p class="catalog-description">Моноподы<br>
                 для селфи</p>
             </li>
             <li class="catalog-items">
@@ -261,9 +261,17 @@
         </section>
         <section class="delivery">
           <div class="buttons-delivery">
-            <a class="button-active" href="#">Доставка</a>
-            <a class="button-delivery" href="#">Гарантия</a>
-            <a class="button-delivery" href="#">Кредит</a>
+            <ul class="buttons-delivery-control">
+              <li class="services-control">
+                <a class="button-active" href="#">Доставка</a>
+              </li>
+              <li class="services-control">
+                <a class="button-delivery" href="#">Гарантия</a>
+              </li>
+              <li class="services-control">
+                <a class="button-delivery" href="#">Кредит</a>
+              </li>
+            </ul>
           </div>
           <svg class="bar-logo" width="7" height="319" viewBox="0 0 7 319" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -356,28 +364,29 @@
         </section>
 
         <section class="subscribe">
-          <div class="subscribe-text">
-            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-info">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
-              а также
-              акции,
-              спецпредложения и вот это вот всё.</p>
-          </div>
+          <div class="sub-container">
+            <div class="subscribe-text">
+              <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+              <p class="subscribe-info">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+                распаковками,
+                а также
+                акции,
+                спецпредложения и вот это вот всё.</p>
+            </div>
+            <div class="subscribe-form">
+              <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="newsletter-email"></label>
+                <input class="field-subscribe" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+                  id="newsletter-email" required>
 
-          <div class="subscribe-form">
-
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email"></label>
-              <input class="field-subscribe" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-                id="newsletter-email" required>
-
-              <button class="newsletter-button" type="submit">Подписаться</button>
-            </form>
-            <svg class="green-tick" width="15" height="14" viewBox="0 0 15 14" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.498 0 4.89805 9.3.498047 5v4.7L4.99805 14 14.498 4.7V0Z" fill="#08AF00" />
-            </svg>
-            <p class="subscribe-free">Это бесплатно</p>
+                <button class="newsletter-button" type="submit">Подписаться</button>
+              </form>
+              <svg class="green-tick" width="15" height="14" viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.498 0 4.89805 9.3.498047 5v4.7L4.99805 14 14.498 4.7V0Z" fill="#08AF00" />
+              </svg>
+              <p class="subscribe-free">Это бесплатно</p>
+            </div>
           </div>
         </section>
       </div>
@@ -387,14 +396,13 @@
         <section class="footer-address">
           <img class="device-image" src="/images/device.png" width="145px" height="36px" alt="device">
           <span class="visually-hidden">Device</span>
-          <p>Санкт-Петербург, набережная
+          <p class="add-text">Санкт-Петербург, набережная
             реки Карповки, 5, литера П.</p>
           <svg class="footer-bar" width="80" height="7" viewBox="0 0 80 7" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M80 0H0v7h80V0Z" fill="#FFC700" />
           </svg>
         </section>
-
         <section class="footer-social">
           <div class="device-promise">
             <a class="device-promise-txt" href="#">Доставка</a>

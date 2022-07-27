@@ -464,8 +464,6 @@ a {
 
 
 .page-container {
-  width: 1160px;
-  /* margin-left: 140px; */
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -685,16 +683,23 @@ h3 {
   gap: 116px;
   margin-top: 70px;
   margin-left: 140px;
+  background-image: linear-gradient(to bottom,#ffffff 100px,#F0F0F0 0px);
+  z-index: 1;
 }
 
 .buttons-delivery {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  gap: 35px;
+  padding-bottom:50px;
+  list-style: none;
 }
-
+.services-control:not(:last-child) {
+  margin-bottom: 40px;
+}
+.buttons-delivery-control{
+  list-style: none;
+}
 .delivery-inf {
   display: flex;
   flex-direction: column;
@@ -705,13 +710,14 @@ h3 {
 .delivery-description {
   padding-top: 30px;
 }
-
+.bar-logo {
+  position: relative;
+  top:-20px;
+}
 .delivery-img {
-  position: absolute;
-  left: 89.18%;
-  right: 2.72%;
-  top: 27.21%;
-  bottom: 3.93%;
+  position: relative;
+  left: 550px;
+  top: -205px;
 }
 
 /* end delivery section */
@@ -819,19 +825,21 @@ h3 {
 
 
 .subscribe {
-  background: #F0F0F0;
   margin-top: 70px;
-  padding-left: 140px;
-  width: 1440px;
   padding-top: 64px;
   padding-bottom: 56px;
+  background-color: #F0F0F0;
+}
+
+.sub-container {
+  width: 1440px;
 }
 
 .subscribe-text {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  padding-left: 140px;
   padding-bottom: 100px;
 }
 
@@ -851,6 +859,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 140px;
 }
 
 .field-subscribe {
@@ -884,7 +893,7 @@ h3 {
 
 .green-tick {
   position: absolute;
-  left: 70%;
+  left: 80%;
 }
 
 .subscribe-free {
@@ -908,9 +917,8 @@ h3 {
   line-height: 20px;
   color: #FFFFFF;
   background: #444444;
-  padding-top: 62px;
+  padding-top: 32px;
 }
-
 .page-footer-container {
   display: flex;
   flex-direction: row;
@@ -922,21 +930,26 @@ h3 {
 .footer-address {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  flex-wrap: wrap;
+  width: 254px;
 }
-
+.add-text{
+  padding-top:35px;
+  padding-bottom:34px;
+}
 .footer-social {
   display: flex;
   flex-direction: column;
-  padding:55px;
+  padding-top: 50px;
+  padding-left: 30px;
 }
 
 .device-promise {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 0px;
+  align-items: center;;
   gap: 35px;
+  padding-top:36px;
 }
 
 .device-promise-txt {
@@ -953,20 +966,24 @@ h3 {
 .footer-social-list {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+  flex-wrap: wrap;
+  padding-left:149px;
+  padding-top:30px;
   gap: 15px;
   list-style: none;
-  padding
+
 }
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  padding-top:86px;
+  margin-left:60px;
 }
+
 .footer-contacts-address-phone {
   text-decoration-line: underline;
-padding-bottom:63px;
-
-color: #FFFFFF;
+  padding-bottom: 45px;
+  color: #FFFFFF;
 }
