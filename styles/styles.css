@@ -24,11 +24,12 @@
 
 .html {
   height: 100%;
+
 }
 
 body {
   font-family: "Rubik", sans-serif;
-  margin: 0;
+  margin: 0 auto;
   min-height: 100%;
   font-style: normal;
   font-size: 18px;
@@ -56,7 +57,7 @@ body {
   border-radius: 0px 50px 50px 0px;
 }
 
-.search:default {}
+
 
 .search:hover {
   background: #000000;
@@ -64,8 +65,8 @@ body {
 }
 
 .search:focus {
-  border: 1px solid red;
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 
 }
 
@@ -119,10 +120,13 @@ body {
   background-color: inherit;
 }
 
-.button:hover::before,
-.button:focus::before {
-
+.button:hover::before {
   transform: scaleY(5);
+}
+
+.button:focus-visible {
+  outline: 2px solid #AF4FFF;
+
 }
 
 .button:active {
@@ -147,6 +151,7 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   color: #FFE17F;
+
 }
 
 .button-active::before {
@@ -183,7 +188,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 20px;
+  padding-left: 25px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
@@ -203,30 +208,20 @@ body {
   background: #FFE17F;
 }
 
-.button-delivery:default {
-  background-color: inherit;
-}
 
-.button-delivery:default::before {
-  background-color: inherit;
-}
 
-.button-delivery:hover,
-.button-delivery:focus {
-  background-color: inherit;
-}
 
-.button-delivery:hover::before,
-.button-delivery:focus::before {
-
+.button-delivery:hover::before{
   transform: scaleY(5);
 }
-
+.button-delivery:focus-visible{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 5px;
+}
 .button-delivery:active {
   background: #000000;
   color: #FFE17F;
 }
-
 .button-delivery:active::before {
   background: #000000;
   color: #FFE17F;
@@ -272,6 +267,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: left;
+  margin-top:40px;
 }
 
 .button-about:before {
@@ -286,28 +282,16 @@ body {
   background-color: #FFE17F;
 }
 
-.button-us:default,
-.button-about:default {
-  background-color: inherit;
-}
 
-.button-us:default::before,
-.button-about:default::before {
-  background-color: inherit;
-}
 
-.button-us:hover,
-.button-us:focus,
-.button-about:hover,
-.button-about:focus {
-  background-color: inherit;
-}
+
+
+
 
 .button-us:hover::before,
 .button-us:focus::before,
 .button-about:hover::before,
 .button-about:focus::before {
-
   transform: scaleY(4)
 }
 
@@ -401,7 +385,10 @@ body {
   opacity: 0.6;
 }
 
-.navigation-logo:focus {}
+.navigation-logo:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: -2px;
+}
 
 .navigation-logo:active {
   opacity: 0.3;
@@ -412,7 +399,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -431,21 +418,17 @@ body {
   padding-left: 12px;
 }
 
-.profile:hover,
-.site-diag:hover,
-.site-bin:hover {
+
+
+.navigation-link:hover {
   opacity: 0.6;
 }
 
-.profile:focus,
-.site-diag:focus,
-.site-bin:focus {
-  border-top: 2px solid #AF4FFF;
+.navigation-link:focus-visible {
+  border: 2px solid #AF4FFF;
 }
 
-.profile:active,
-.site-diag:active,
-.site-bin:active {
+.navigation-link:active {
   opacity: 0.3;
 }
 
@@ -473,6 +456,7 @@ body {
 }
 
 .site-navigation {
+  position: relative;
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -501,8 +485,8 @@ body {
   opacity: 0.6;
 }
 
-.menu-item:focus {
-  border: 2px solid #AF4FFF;
+.menu-item:focus-visible {
+  outline: 2px solid #AF4FFF;
 }
 
 .menu-item:active {
@@ -526,25 +510,47 @@ a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  border: none;
+  background-color: #FFE17F;
 }
 
-.menu-item-sub::after {
-  content: "";
-  position: absolute;
-  top: 118px;
-  left: 308px;
-  width: 50px;
-  height: 50px;
-  background-image: url(../images/plus.svg);
-  background-repeat: no-repeat;
-  opacity: 0.3;
+.menu-item-sub .close-icon {
+  opacity: 0.2;
+}
 
+.menu-item-sub .close-icon:hover {
+  opacity: 0.7;
+}
+
+.menu-item-sub .close-icon:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.menu-item-sub:active {
+  opacity: 1.1;
+}
+
+.close-icon {
+  position: absolute;
+  right: 73%;
+  top: -20px;
+  z-index: 2;
+}
+
+.enter-icon {
+  position: relative;
+  right: 80px;
+}
+
+.diag-icon {
+  position: relative;
+  right: 110px;
 }
 
 .cart-numbers {
   position: relative;
-  left: -114px;
-  top: -2px;
+  left: -130px;
+  top: -1px;
   z-index: 1;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
@@ -555,33 +561,28 @@ a {
 
 .bin-icon {
   position: relative;
-  left: 5px;
+  left: -100px;
+  top: 2px;
 }
 
 .cart-logo {
   position: relative;
-  left: -134px;
-  top: 3px;
+  left: -149px;
+  top: 5px;
 }
 
-.menu-item-sub:hover::after {
-  opacity: 2.1;
-}
 
-.menu-item-sub:focus {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
-}
 
+/* popover start */
 .popover {
   position: absolute;
   left: 72%;
-  bottom: -80px;
+  bottom: -180px;
   width: 320px;
   padding: 20px;
   color: #FFFFFF;
   background: #000000;
-  z-index: 1;
+  z-index: 2;
 }
 
 .popover-cart {
@@ -600,15 +601,31 @@ a {
 
 .popover-close {
   position: absolute;
-  left: 330px;
+  left: 320px;
   top: 35px;
+  background: #000000;
+}
+
+.popover-close:hover,
+.popover-close-close:hover {
+  opacity: 0.6;
+}
+
+.popover-close:focus-visible,
+.popover-close-close:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.popover-close:active,
+.popover-close-close:active {
+  opacity: 0.3;
 }
 
 .popover-close-close {
   position: absolute;
-  left: 330px;
+  left: 320px;
   top: 105px;
-
+  background: #000000;
 }
 
 .popover-item {
@@ -634,6 +651,34 @@ a {
   padding-right: 23px;
 }
 
+.popover-item-link {
+  display: flex;
+  flex-wrap: nowrap;
+  color: #FFFFFF;
+  max-height: 43px;
+  max-width: 183px;
+  margin-bottom: 40px;
+}
+
+.popover-item-link:hover {
+  opacity: 0.6;
+}
+
+.popover-item-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+
+}
+
+.popover-item-link:active {
+  opacity: 0.3;
+}
+
+.popover-description {
+  margin: 0;
+  text-align: start;
+  margin-bottom: 42px;
+}
+
 .popover-cart-button {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -648,25 +693,43 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  max-width: 320px;
   height: 50px;
-
   background: #FFFFFF;
 }
+
+.popover-cart-button:hover {
+  background: #FFE17F;
+}
+
+.popover-cart-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.popover-cart-button:active {
+  background-color: #ad9544;
+}
+
+.popover-cart-button:disabled {
+  background: #FFFFFF;
+  opacity: 0.3;
+
+}
+
+/* popover end */
 
 /* sub menu start */
 .sub-menu {
   display: none;
   flex-direction: row;
-  box-sizing: border-box;
   position: absolute;
-  top: 168px;
-  left: 0;
+  top: 18px;
+  left: -60px;
   z-index: 1;
-  width: 1220px;
-  min-height: 180px;
+  width: 1160px;
+  min-height: 150px;
   padding-top: 33px;
-  padding-left: 60px;
+  padding-right:20px;
   background-color: #FFE17F;
 }
 
@@ -684,6 +747,15 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #000000;
+}
+.sub-item-sub:hover{
+  opacity: 0.6;
+}
+.sub-item-sub:focus-visible{
+  outline: 2px solid #AF4FFF;
+}
+.sub-item-sub:active{
+  opacity: 0.3;
 }
 
 /* sub menu end */
@@ -789,14 +861,26 @@ a {
 
 .slide-picture {
   position: relative;
-  top: -220px;
+  top: -207px;
   left: 100px;
+}
+
+.slide-left,
+.slide-right {
+  border: none;
+  background-color: #ffffff;
 }
 
 .slide {
   counter-increment: slide-counter;
 }
 
+/* открытие слайдов */
+.slide {
+  display: none;
+}
+
+/* конец открытия слайдов */
 .sliders {
   list-style: none;
   counter-reset: slide-counter;
@@ -836,8 +920,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
 
 .slider-button:hover path {
   fill: #000000;
@@ -984,23 +1066,26 @@ h3 {
   width: 1160px;
   list-style: none;
   margin-left: 140px;
-}
 
-.catalog-items:default {}
+
+}
 
 li .catalog-picture :hover {
-  background: #FFC700;
+  background-color: #FFC700;
 }
 
-.catalog-items:focus {
+.catalog-items:focus-visible {
   background: #FFE17F;
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .catalog-items:active {
   opacity: 0.3;
 }
-
+.haha:focus-visible {
+  background: #FFE17F;
+  outline: 2px solid #AF4FFF;
+}
 .catalog-description {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1019,29 +1104,46 @@ li .catalog-picture :hover {
 }
 
 .vr-logo {
-  padding: 54px 32px;
+  padding-top:54px;
+  padding-left:32px;
+  padding-right:31px;
+  padding-bottom: 51px;
 }
 
 .monopod-logo {
-  padding-top: 44px;
-  padding-left: 37px;
+  padding-top: 43px;
+  padding-left: 36px;
   padding-right: 37px;
+
 }
 
 .camera-logo {
-  padding: 37px 44px;
+  padding-top:37px;
+  padding-left:44px;
+  padding-right:44px;
+  padding-bottom:36px;
 }
 
 .fitnes-logo {
-  padding: 47px 26px;
+  padding-top:47px;
+  padding-left:26px;
+  padding-right:26px;
+  padding-bottom: 47px;
 }
 
 .smart-logo {
-  padding: 32px 52px;
+  padding-top:32px;
+  padding-left:52px;
+  padding-right:51px;
+  padding-bottom: 30px;
 }
 
 .copter-logo {
-  padding: 48px 14px;
+  padding-top:48px;
+  padding-left:14px;
+  padding-right:13px;
+  padding-bottom: 42px;
+
 }
 
 /* Delivery section */
@@ -1058,7 +1160,9 @@ li .catalog-picture :hover {
   background-image: linear-gradient(to bottom, #ffffff 100px, #F0F0F0 0px);
   z-index: 1;
 }
-
+.service-delivery{
+  display: none;
+}
 .buttons-delivery {
   display: flex;
   flex-direction: column;
@@ -1116,14 +1220,17 @@ li .catalog-picture :hover {
 
 .rare-wrapper {
   display: flex;
+  flex-wrap: nowrap;
 }
-
+.rare-wrapper:hover g{
+  opacity: 1;
+}
 .rare-wrapper:hover .car-delivery {
   background: #FFC700;
 }
 
 .rare-wrapper:focus {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .rare-wrapper:active {
@@ -1198,11 +1305,30 @@ li .catalog-picture :hover {
   margin-bottom: 40px;
 }
 
-.transport-company-name {
+.transport-company {
+  display: flex;
+  flex-direction: column;
   font-family: 'Rubik bold', sans-serif;
   letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
 }
-
+.transport-company-list{
+height: 20px;
+padding-bottom:20px;
+}
+.circle {
+  position: relative;
+  right:26px;
+  top: 31px;
+  width: 8px;
+  height: 8px;
+  background: #FFC700;
+  border-radius: 50%;
+}
 .about-description {
   margin: 0;
   padding: 0;
