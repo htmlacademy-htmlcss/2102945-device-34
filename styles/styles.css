@@ -88,11 +88,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding-left: 39px;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-
+  width: 180px;
 }
 
 .button::before {
@@ -107,13 +106,7 @@ body {
   background: #FFE17F;
 }
 
-.button:default {
-  background-color: inherit;
-}
 
-.button:default::before {
-  background-color: inherit;
-}
 
 .button:hover,
 .button:focus {
@@ -126,7 +119,7 @@ body {
 
 .button:focus-visible {
   outline: 2px solid #AF4FFF;
-
+  outline-offset: 5px;
 }
 
 .button:active {
@@ -151,7 +144,6 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   color: #FFE17F;
-
 }
 
 .button-active::before {
@@ -171,7 +163,7 @@ body {
 
 }
 
-.button-active:focus::before {
+.button-active:focus-visible::before {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -188,19 +180,19 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 25px;
+  padding-left: 6px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-
+  width: 152px;
 }
 
 .button-delivery::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 0px;
   z-index: -1;
   width: 160px;
   height: 8px;
@@ -208,20 +200,20 @@ body {
   background: #FFE17F;
 }
 
-
-
-
-.button-delivery:hover::before{
+.button-delivery:hover::before {
   transform: scaleY(5);
 }
-.button-delivery:focus-visible{
+
+.button-delivery:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 5px;
 }
+
 .button-delivery:active {
   background: #000000;
   color: #FFE17F;
 }
+
 .button-delivery:active::before {
   background: #000000;
   color: #FFE17F;
@@ -240,6 +232,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: left;
+  max-width: 217px;
 }
 
 .button-us::before {
@@ -253,10 +246,29 @@ body {
   margin-top: -4px;
   background-color: #FFE17F;
 }
+.button-us:hover,
+.button-us:focus {
+  background-color: inherit;
+}
 
+.button-us:hover::before {
+  transform: scaleY(5);
+}
+
+.button-us:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 5px;
+}
+.button-us:active {
+  background: #FFCC33;
+}
+
+.button-us:active::before {
+  background: #FFCC33;
+}
 .button-about {
   position: relative;
-  display: inline-block;
+  display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -267,7 +279,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: left;
-  margin-top:40px;
+  margin-top: 40px;
+  max-width: 237px;
 }
 
 .button-about:before {
@@ -276,34 +289,33 @@ body {
   top: 50%;
   left: 0;
   z-index: -1;
-  width: 259px;
+  width: 257px;
   height: 8px;
   margin-top: -4px;
   background-color: #FFE17F;
 }
 
-
-
-
-
-
-
-.button-us:hover::before,
-.button-us:focus::before,
-.button-about:hover::before,
-.button-about:focus::before {
-  transform: scaleY(4)
+.button-about:hover,
+.button-about:focus {
+  background-color: inherit;
 }
 
-.button-us:active,
+.button-about:hover::before {
+  transform: scaleY(5);
+}
+
+.button-about:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 5px;
+}
 .button-about:active {
   background: #FFCC33;
 }
 
-.button-us:active::before,
-.button-about:active:before {
+.button-about:active::before {
   background: #FFCC33;
 }
+
 
 .newsletter-button {
   position: relative;
@@ -311,7 +323,7 @@ body {
   right: 5px;
   box-sizing: border-box;
   display: inline-block;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -385,9 +397,8 @@ body {
   opacity: 0.6;
 }
 
-.navigation-logo:focus {
+.navigation-logo:focus-visible{
   outline: 2px solid #AF4FFF;
-  outline-offset: -2px;
 }
 
 .navigation-logo:active {
@@ -729,7 +740,7 @@ a {
   width: 1160px;
   min-height: 150px;
   padding-top: 33px;
-  padding-right:20px;
+  padding-right: 20px;
   background-color: #FFE17F;
 }
 
@@ -748,13 +759,16 @@ a {
   line-height: 18px;
   color: #000000;
 }
-.sub-item-sub:hover{
+
+.sub-item-sub:hover {
   opacity: 0.6;
 }
-.sub-item-sub:focus-visible{
+
+.sub-item-sub:focus-visible {
   outline: 2px solid #AF4FFF;
 }
-.sub-item-sub:active{
+
+.sub-item-sub:active {
   opacity: 0.3;
 }
 
@@ -808,8 +822,10 @@ a {
 
 .search-icon {
   position: absolute;
-  left: 74px;
-  top: 19%;
+  left: 80px;
+  top: 56px;
+  border:none;
+  background-color:#FFE17F;
 }
 
 .main-container {
@@ -865,11 +881,7 @@ a {
   left: 100px;
 }
 
-.slide-left,
-.slide-right {
-  border: none;
-  background-color: #ffffff;
-}
+
 
 .slide {
   counter-increment: slide-counter;
@@ -902,13 +914,21 @@ a {
   color: #ffffff;
 }
 
-.slider-controls {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 43%;
-  width: 100%;
-  transform: translateY(-50%);
+
+.slide-left {
+  position: relative;
+  bottom: 300px;
+  left: -540px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.slide-right {
+  position: relative;
+  bottom: 300px;
+  left: -50px;
+  border: none;
+  background-color: #ffffff
 }
 
 .slider-button {
@@ -1066,8 +1086,10 @@ h3 {
   width: 1160px;
   list-style: none;
   margin-left: 140px;
+}
 
-
+.catalog-link {
+  display: block;
 }
 
 li .catalog-picture :hover {
@@ -1082,10 +1104,12 @@ li .catalog-picture :hover {
 .catalog-items:active {
   opacity: 0.3;
 }
+
 .haha:focus-visible {
   background: #FFE17F;
   outline: 2px solid #AF4FFF;
 }
+
 .catalog-description {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1104,9 +1128,9 @@ li .catalog-picture :hover {
 }
 
 .vr-logo {
-  padding-top:54px;
-  padding-left:32px;
-  padding-right:31px;
+  padding-top: 54px;
+  padding-left: 32px;
+  padding-right: 31px;
   padding-bottom: 51px;
 }
 
@@ -1118,30 +1142,30 @@ li .catalog-picture :hover {
 }
 
 .camera-logo {
-  padding-top:37px;
-  padding-left:44px;
-  padding-right:44px;
-  padding-bottom:36px;
+  padding-top: 37px;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-bottom: 36px;
 }
 
 .fitnes-logo {
-  padding-top:47px;
-  padding-left:26px;
-  padding-right:26px;
+  padding-top: 47px;
+  padding-left: 26px;
+  padding-right: 26px;
   padding-bottom: 47px;
 }
 
 .smart-logo {
-  padding-top:32px;
-  padding-left:52px;
-  padding-right:51px;
+  padding-top: 32px;
+  padding-left: 52px;
+  padding-right: 51px;
   padding-bottom: 30px;
 }
 
 .copter-logo {
-  padding-top:48px;
-  padding-left:14px;
-  padding-right:13px;
+  padding-top: 48px;
+  padding-left: 14px;
+  padding-right: 13px;
   padding-bottom: 42px;
 
 }
@@ -1153,16 +1177,17 @@ li .catalog-picture :hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 116px;
   margin-top: 70px;
   margin-left: 140px;
   background-image: linear-gradient(to bottom, #ffffff 100px, #F0F0F0 0px);
   z-index: 1;
 }
-.service-delivery{
+
+.service-delivery {
   display: none;
 }
+
 .buttons-delivery {
   display: flex;
   flex-direction: column;
@@ -1212,19 +1237,23 @@ li .catalog-picture :hover {
   display: flex;
   align-items: center;
   background: #F0F0F0;
-  width: 1210px;
+  max-width: 1160px;
   height: 100px;
   margin-top: 70px;
   margin-left: 140px;
+
 }
 
 .rare-wrapper {
   display: flex;
   flex-wrap: nowrap;
+
 }
-.rare-wrapper:hover g{
+
+.rare-wrapper:hover g {
   opacity: 1;
 }
+
 .rare-wrapper:hover .car-delivery {
   background: #FFC700;
 }
@@ -1259,9 +1288,11 @@ li .catalog-picture :hover {
 }
 
 .toolip {
-  position: relative;
-  left: 100px;
-  top: 30px;
+  display: flex;
+
+  padding-top: 26px;
+  padding-left: 60px;
+
   opacity: 0.6;
 }
 
@@ -1316,19 +1347,22 @@ li .catalog-picture :hover {
   line-height: 20px;
   list-style: none;
 }
-.transport-company-list{
-height: 20px;
-padding-bottom:20px;
+
+.transport-company-list {
+  height: 20px;
+  padding-bottom: 20px;
 }
+
 .circle {
   position: relative;
-  right:26px;
+  right: 26px;
   top: 31px;
   width: 8px;
   height: 8px;
   background: #FFC700;
   border-radius: 50%;
 }
+
 .about-description {
   margin: 0;
   padding: 0;
@@ -1342,6 +1376,8 @@ padding-bottom:20px;
 }
 
 .about-description-tel {
+  display: block;
+  width: 154px;
   font-family: 'Rubik', sans-serif;
   text-decoration-line: underline;
   color: #444444;
@@ -1350,7 +1386,9 @@ padding-bottom:20px;
 .about-description-tel:hover {
   color: #FFC700;
 }
-
+.about-description-tel:focus-visible{
+  outline: 2px solid #AF4FFF;
+}
 .about-description-tel:active {
   opacity: 0.3;
   color: #FFC700;
@@ -1427,12 +1465,8 @@ padding-bottom:20px;
 .field-subscribe:focus {
   background: #DCDCDC;
   outline: none;
+  opacity: 0.5;
 }
-
-.field-subscribe:invalid {
-  border-color: red;
-}
-
 .field-subscribe:disabled {
   opacity: 0.;
 }
@@ -1445,14 +1479,6 @@ padding-bottom:20px;
 .subscribe-free {
   padding-left: 220px;
 }
-
-
-
-
-
-
-
-
 
 /* footer */
 .page-footer {
@@ -1493,18 +1519,21 @@ padding-bottom:20px;
   padding-left: 30px;
 }
 
-.device-image:default {}
-
-.device-image:hover {
+.footer-logo:hover {
   opacity: 0.6;
 }
-
-.device-image:focus {}
-
-.device-image:active {
-  opacity: 0.3;
+.footer-logo{
+  display: block;
+  width: 145px;
+}
+.footer-logo:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: -2px;
 }
 
+.footer-logo:active {
+  opacity: 0.3;
+}
 .device-promise {
   display: flex;
   flex-direction: row;
@@ -1515,12 +1544,12 @@ padding-bottom:20px;
 
 .device-promise-txt:hover {
   color: #FFC700;
-  border-bottom: 2px solid #FFC700;
+  text-decoration: underline;
 }
 
-.device-promise-txt:focus {
+.device-promise-txt:focus-visible {
   color: #FFFFFF;
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
 }
 
 .device-promise-txt:active {
@@ -1541,18 +1570,15 @@ padding-bottom:20px;
 
 .button-social:hover circle {
   fill: #FFC700;
-  ;
 }
 
-.button-social:focus {
+.button-social:focus-visible {
   outline: 2px solid #AF4FFF;
 }
 
 .button-social:active circle,
 .button-social:active path {
-
   fill: #FFC700;
-
 }
 
 .footer-social-list {
@@ -1563,7 +1589,6 @@ padding-bottom:20px;
   padding-top: 30px;
   gap: 15px;
   list-style: none;
-
 }
 
 .footer-contacts {
@@ -1575,32 +1600,34 @@ padding-bottom:20px;
 }
 
 .footer-contacts-address-phone {
+  display: block;
   text-decoration-line: underline;
-  padding-bottom: 45px;
   color: #FFFFFF;
+margin-bottom:45px;
 }
 
 .footer-contacts-address-phone:hover {
   color: #FFC700;
 }
 
-.footer-contacts-address-phone:focus {
-  border: 2px solid #AF4FFF;
-  height: 0;
+.footer-contacts-address-phone:focus-visible {
+  outline: 2px solid #AF4FFF;
 }
 
 .footer-contacts-address-phone:active {
   opacity: 0.3;
   color: #FFC700;
 }
-
+.html-logo{
+  display: block;
+  width: 113px;
+}
 .html-logo:hover path {
   fill: #FFFFFF;
 }
 
 .html-logo:focus {
-  border: 1px solid #AF4FFF;
-  width: 119px;
+  outline: 1px solid #AF4FFF;
 }
 
 .html-logo:active path {
