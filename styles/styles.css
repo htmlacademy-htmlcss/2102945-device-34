@@ -24,18 +24,17 @@
 
 .html {
   height: 100%;
-
 }
 
 body {
   font-family: "Rubik", sans-serif;
-  margin: 0 auto;
   min-height: 100%;
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
   background: #FFFFFF;
+  margin-top: 40px;
 }
 
 /* buttons */
@@ -56,8 +55,6 @@ body {
   border: 2px solid #000000;
   border-radius: 0px 50px 50px 0px;
 }
-
-
 
 .search:hover {
   background: #000000;
@@ -106,8 +103,6 @@ body {
   background: #FFE17F;
 }
 
-
-
 .button:hover,
 .button:focus {
   background-color: inherit;
@@ -132,7 +127,8 @@ body {
 
 .button-active {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -141,20 +137,17 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding-top: 30px;
-  padding-left: 20px;
   color: #FFE17F;
 }
 
 .button-active::before {
   content: "";
   position: absolute;
-  top: 50%;
+  bottom: -9px;
   left: 0;
   z-index: -1;
-  width: 267px;
+  width: 280px;
   height: 40px;
-  margin-top: -4px;
   background: #000000;
 }
 
@@ -186,6 +179,7 @@ body {
   color: #000000;
   text-align: center;
   width: 152px;
+
 }
 
 .button-delivery::before {
@@ -246,6 +240,7 @@ body {
   margin-top: -4px;
   background-color: #FFE17F;
 }
+
 .button-us:hover,
 .button-us:focus {
   background-color: inherit;
@@ -259,6 +254,7 @@ body {
   outline: 2px solid #AF4FFF;
   outline-offset: 5px;
 }
+
 .button-us:active {
   background: #FFCC33;
 }
@@ -266,6 +262,7 @@ body {
 .button-us:active::before {
   background: #FFCC33;
 }
+
 .button-about {
   position: relative;
   display: block;
@@ -308,6 +305,7 @@ body {
   outline: 2px solid #AF4FFF;
   outline-offset: 5px;
 }
+
 .button-about:active {
   background: #FFCC33;
 }
@@ -374,16 +372,16 @@ body {
 }
 
 /* navigation */
+
 .navigation {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
   padding-left: 60px;
   width: 1160px;
   height: 300px;
-  margin: 40px 140px;
+  margin: 0 auto;
   background: #FFE17F;
 }
 
@@ -392,12 +390,11 @@ body {
   top: -20px;
 }
 
-
 .navigation-logo:hover {
   opacity: 0.6;
 }
 
-.navigation-logo:focus-visible{
+.navigation-logo:focus-visible {
   outline: 2px solid #AF4FFF;
 }
 
@@ -410,7 +407,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 auto;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -421,22 +417,24 @@ body {
 .navigation-list {
   display: flex;
   list-style: none;
+  padding: 0;
+  padding-left: 53px;
   padding-right: 176px;
 }
 
 .navigation-link {
+
   color: #000000;
-  padding-left: 12px;
+
 }
-
-
 
 .navigation-link:hover {
   opacity: 0.6;
 }
 
 .navigation-link:focus-visible {
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
+
 }
 
 .navigation-link:active {
@@ -451,6 +449,7 @@ body {
   margin: 0;
   list-style: none;
   gap: 61px;
+  margin-left: 30px;
 }
 
 .header-bottom {
@@ -523,6 +522,7 @@ a {
   color: #000000;
   border: none;
   background-color: #FFE17F;
+padding:0;
 }
 
 .menu-item-sub .close-icon {
@@ -739,7 +739,7 @@ a {
   z-index: 1;
   width: 1160px;
   min-height: 150px;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-right: 20px;
   background-color: #FFE17F;
 }
@@ -822,10 +822,10 @@ a {
 
 .search-icon {
   position: absolute;
-  left: 80px;
+  left: 70px;
   top: 56px;
-  border:none;
-  background-color:#FFE17F;
+  border: none;
+  background-color: #FFE17F;
 }
 
 .main-container {
@@ -839,13 +839,14 @@ a {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  margin: 0 auto;
 }
 
 .device {
   display: flex;
   flex-direction: row;
   margin-left: 140px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .device-about {
@@ -854,7 +855,7 @@ a {
   position: absolute;
   width: 560px;
   height: 189px;
-  left: 800px;
+  left: 810px;
   top: 268px;
 
 }
@@ -865,6 +866,7 @@ a {
   align-items: flex-start;
   padding: 0px;
   gap: 20px;
+
 }
 
 .wrapper {
@@ -877,11 +879,9 @@ a {
 
 .slide-picture {
   position: relative;
-  top: -207px;
-  left: 100px;
+  top: -167px;
+  left: 110px;
 }
-
-
 
 .slide {
   counter-increment: slide-counter;
@@ -1044,6 +1044,7 @@ a {
   font-size: 36px;
   line-height: 30px;
   color: #000000;
+
 }
 
 h1 {
@@ -1179,8 +1180,7 @@ li .catalog-picture :hover {
   align-items: center;
   gap: 116px;
   margin-top: 70px;
-  margin-left: 140px;
-  background-image: linear-gradient(to bottom, #ffffff 100px, #F0F0F0 0px);
+  background-image: linear-gradient(to bottom, #ffffff 85px, #F0F0F0 0px);
   z-index: 1;
 }
 
@@ -1194,6 +1194,7 @@ li .catalog-picture :hover {
   align-items: flex-start;
   padding-bottom: 50px;
   list-style: none;
+  margin-left: 100px;
 }
 
 .services-control:not(:last-child) {
@@ -1241,13 +1242,12 @@ li .catalog-picture :hover {
   height: 100px;
   margin-top: 70px;
   margin-left: 140px;
-
 }
 
 .rare-wrapper {
   display: flex;
   flex-wrap: nowrap;
-
+  width: 1160px;
 }
 
 .rare-wrapper:hover g {
@@ -1258,7 +1258,7 @@ li .catalog-picture :hover {
   background: #FFC700;
 }
 
-.rare-wrapper:focus {
+.car-delivery:focus-visible {
   outline: 2px solid #AF4FFF;
 }
 
@@ -1386,9 +1386,11 @@ li .catalog-picture :hover {
 .about-description-tel:hover {
   color: #FFC700;
 }
-.about-description-tel:focus-visible{
+
+.about-description-tel:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .about-description-tel:active {
   opacity: 0.3;
   color: #FFC700;
@@ -1467,8 +1469,8 @@ li .catalog-picture :hover {
   outline: none;
   opacity: 0.5;
 }
-.field-subscribe:disabled {
-  opacity: 0.;
+.field-subscribe:not(:placeholder-shown){
+border-color: #FF3D3D;;
 }
 
 .green-tick {
@@ -1522,10 +1524,12 @@ li .catalog-picture :hover {
 .footer-logo:hover {
   opacity: 0.6;
 }
-.footer-logo{
+
+.footer-logo {
   display: block;
   width: 145px;
 }
+
 .footer-logo:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: -2px;
@@ -1534,6 +1538,7 @@ li .catalog-picture :hover {
 .footer-logo:active {
   opacity: 0.3;
 }
+
 .device-promise {
   display: flex;
   flex-direction: row;
@@ -1603,7 +1608,7 @@ li .catalog-picture :hover {
   display: block;
   text-decoration-line: underline;
   color: #FFFFFF;
-margin-bottom:45px;
+  margin-bottom: 45px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -1618,10 +1623,12 @@ margin-bottom:45px;
   opacity: 0.3;
   color: #FFC700;
 }
-.html-logo{
+
+.html-logo {
   display: block;
   width: 113px;
 }
+
 .html-logo:hover path {
   fill: #FFFFFF;
 }
