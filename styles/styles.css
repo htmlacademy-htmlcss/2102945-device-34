@@ -149,7 +149,7 @@ body {
   bottom: -9px;
   left: 0;
   z-index: -1;
-  width: 280px;
+  width: 275px;
   height: 40px;
   background: #000000;
 }
@@ -161,7 +161,7 @@ body {
 
 .button-active:focus-visible::before {
   outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
+  outline-offset: 3px;
 }
 
 .button-active:active {
@@ -523,6 +523,7 @@ a {
 }
 
 .menu-item-sub {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -998,55 +999,39 @@ a {
   cursor: pointer;
 }
 
-.slider-pagination-button:default {
-  background: #FFFFFF;
-  border: 2px solid #000000;
-}
 
 .slider-pagination-button:hover {
-
   border: 2px solid #000000;
   border-color: rgb(116, 108, 108);
 }
 
-.slider-pagination-button:focus {
-  background: #FFFFFF;
-  border: 2px solid #000000;
+.slider-pagination-button:focus-visible {
   outline: 2px solid #AF4FFF;
+  outline-offset: 1px;
 }
 
 .slider-pagination-button:active {
   opacity: 0.3;
-  background: #ffffff;
-  border-color: red;
-  border: 2px solid #000000;
+
 }
 
 .slider-pagination-button-current {
   background-color: #000000;
 }
 
-.slider-pagination-button-current:default {
-  background: #000000;
-  border: 2px solid #000000;
-  fill: #000000;
-}
 
 .slider-pagination-button-current:hover {
-  background: #4d4646;
-  border: 2px solid #000000;
+  opacity: 0.6;
+  background-color: rgb(109, 107, 107);
 }
 
-.slider-pagination-button-current:focus {
+.slider-pagination-button-current:focus-visible {
   outline: 2px solid #AF4FFF;
-  background: #000000;
-  border: 2px solid #000000;
-  border-radius: 2 0%;
+  outline-offset: 1px;
 }
 
 .slider-pagination-button-current:active {
-  background: #999797;
-  border: 2px solid #000000;
+  opacity: 0.3;
 }
 
 /* pagination end*/
@@ -1108,6 +1093,10 @@ h3 {
   list-style: none;
 }
 
+.catalog-items {
+  display: block;
+}
+
 .catalog-link {
   display: block;
 }
@@ -1116,8 +1105,8 @@ li .catalog-picture :hover {
   background-color: #FFC700;
 }
 
-.catalog-items:focus-visible {
-  background: #FFE17F;
+.catalog-link:focus-visible {
+
   outline: 2px solid #AF4FFF;
 }
 
@@ -1200,7 +1189,7 @@ li .catalog-picture :hover {
   margin: 0 auto;
 }
 
-.delivery-wrapper{
+.delivery-wrapper {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -1275,7 +1264,7 @@ li .catalog-picture :hover {
 .rare-wrapper {
   display: flex;
   flex-wrap: nowrap;
-
+  width: 1160px;
 }
 
 .rare-link-wrapper:hover g {
@@ -1457,7 +1446,7 @@ li .catalog-picture :hover {
 .subscribe-form {
   display: flex;
   flex-direction: row;
-  padding-bottom:56px;
+  padding-bottom: 56px;
 }
 
 .subscribe-info {
@@ -1782,8 +1771,7 @@ input.user-text:hover {
 
 input.user-email:focus-visible,
 input.user-name:focus-visible,
-input.user-text:focus-visible
- {
+input.user-text:focus-visible {
   outline: 2px solid #AF4FFF;
   background: #F0F0F0;
 }
