@@ -523,7 +523,7 @@ a {
 }
 
 .menu-item-sub {
-  display: block;
+  display: flex;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -531,10 +531,13 @@ a {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 293px;
+  height: 50px;
   color: #000000;
   border: none;
   background-color: #FFE17F;
   padding: 0;
+  padding-top: 10px;
 }
 
 .menu-item-sub .close-icon {
@@ -554,9 +557,9 @@ a {
 }
 
 .close-icon {
-  position: absolute;
-  right: 73%;
-  top: -20px;
+  position: relative;
+  top: -17px;
+  left: 10px;
 }
 
 .enter-icon {
@@ -998,6 +1001,16 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+/* .slider-pagination-button:before {
+  content: "";
+  position: absolute;
+  top: 289px;
+  left: 487px;
+  width: 16px;
+  height: 16px;
+  outline: 2px solid #AF4FFF;
+  z-index: -1;
+} */
 
 
 .slider-pagination-button:hover {
@@ -1763,20 +1776,20 @@ li .catalog-picture :hover {
   color: #FF3D3D;
 }
 
-input.user-email:hover,
-input.user-name:hover,
-input.user-text:hover {
+.user-email:hover,
+.user-name:hover,
+.user-text:hover {
   background: #DCDCDC;
 }
 
-input.user-email:focus-visible,
-input.user-name:focus-visible,
-input.user-text:focus-visible {
+.user-email:focus-visible,
+.user-name:focus-visible,
+.user-text:focus-visible {
   outline: 2px solid #AF4FFF;
   background: #F0F0F0;
 }
 
-.order-number:not(:placeholder-shown):invalid {
+.user-email:not(:placeholder-shown):invalid {
   border-color: #FF3D3D;
 }
 
@@ -1832,6 +1845,7 @@ input.user-email:disabled {
   top: 378px;
   left: 72%;
   border-style: none;
+  cursor: pointer;
 }
 
 .plus-button {
@@ -1839,7 +1853,24 @@ input.user-email:disabled {
   top: 378px;
   left: 83%;
   border-style: none;
+  cursor: pointer;
 }
+
+.minus-button:hover,
+.plus-button:hover {
+  opacity: 0.4;
+}
+
+.minus-button:focus-visible,
+.plus-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.minus-button:active,
+.plus-button:active {
+  opacity: 0.2;
+}
+
 
 .order-number {
   display: flex;
@@ -1847,9 +1878,7 @@ input.user-email:disabled {
   text-align: center;
 }
 
-.order-number:nth-child(4):invalid {
-  border-color: #FF3D3D;
-}
+
 
 
 .modal-title {
@@ -1859,7 +1888,7 @@ input.user-email:disabled {
   padding-bottom: 42px;
 }
 
-/* .button-send {
+.button-modal {
   display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1873,7 +1902,7 @@ input.user-email:disabled {
 
 }
 
-.button-send::before {
+.button-modal::before {
   content: "";
   position: relative;
   top: 10%;
@@ -1883,7 +1912,7 @@ input.user-email:disabled {
   height: 8px;
   margin-top: -4px;
   background-color: #f0c52e;
-} */
+}
 
 .tooltip-toggle {
   position: absolute;
@@ -1891,6 +1920,7 @@ input.user-email:disabled {
   right: 110px;
   border-style: none;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 .tooltip-text {
