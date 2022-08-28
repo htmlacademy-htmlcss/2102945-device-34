@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "Rubik bold";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
@@ -902,16 +902,16 @@ a {
   right: 30px;
 }
 
-.slide {
-  counter-increment: slide-counter;
-}
-
 /* открытие слайдов */
 .slide {
   display: none;
+  flex-wrap: nowrap;
+  padding: 0;
+  counter-increment: slide-counter;
 }
 
 /* конец открытия слайдов */
+
 .sliders {
   list-style: none;
   counter-reset: slide-counter;
@@ -1001,6 +1001,7 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+
 /* .slider-pagination-button:before {
   content: "";
   position: absolute;
@@ -1098,6 +1099,7 @@ h3 {
 .catalog-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   padding: 0;
   margin: 0;
@@ -1241,12 +1243,15 @@ li .catalog-picture :hover {
 .delivery-inf {
   display: flex;
   flex-direction: column;
-  width: 475px;
-  height: 174px;
+  text-align: left;
+  min-width: 475px;
+  min-height: 174px;
 }
 
 .delivery-description {
+
   padding-top: 5px;
+
 }
 
 .bar-logo {
@@ -1498,7 +1503,7 @@ li .catalog-picture :hover {
 .field-subscribe:focus {
   background: #DCDCDC;
   outline: none;
-  opacity: 0.5;
+
 }
 
 .field-subscribe:not(:placeholder-shown):invalid {
