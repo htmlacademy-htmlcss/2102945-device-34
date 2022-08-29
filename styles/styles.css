@@ -149,7 +149,7 @@ body {
   bottom: -9px;
   left: 0;
   z-index: -1;
-  width: 275px;
+  width: 280px;
   height: 40px;
   background: #000000;
 }
@@ -320,7 +320,7 @@ body {
 
 .newsletter-button {
   position: relative;
-  bottom: 9px;
+  top: 2px;
   right: 5px;
   box-sizing: border-box;
   display: inline-block;
@@ -382,7 +382,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 60px;
-  width: 1160px;
+  width: 1100px;
   height: 300px;
   margin: 0 auto;
   background: #FFE17F;
@@ -429,8 +429,9 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
-  padding-left: 53px;
-  padding-right: 176px;
+  padding-left: 25px;
+  padding-right: 150px;
+  padding-top: 15px;
 }
 
 .navigation-link {
@@ -459,12 +460,12 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  gap: 61px;
+  gap: 15px;
   margin-left: 30px;
 }
 
 .header-bottom {
-  font-family: "Rubik bold", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -472,7 +473,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 44px;
 
 }
 
@@ -483,7 +484,7 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  gap: 61px;
+  gap: 27px;
 }
 
 .menu-item {
@@ -515,7 +516,15 @@ body {
 }
 
 .site-item:first-child {
-  margin-right: 270px;
+  margin-right: 250px;
+}
+
+.site-item:nth-child(3) {
+  margin-left: 15px;
+}
+
+.site-item:nth-child(4) {
+  margin-left: 20px;
 }
 
 a {
@@ -537,7 +546,7 @@ a {
   border: none;
   background-color: #FFE17F;
   padding: 0;
-  padding-top: 10px;
+
 }
 
 .menu-item-sub .close-icon {
@@ -558,8 +567,8 @@ a {
 
 .close-icon {
   position: relative;
-  top: -17px;
-  left: 10px;
+  top: -20px;
+  left: 15px;
 }
 
 .enter-icon {
@@ -595,8 +604,8 @@ a {
 /* popover start */
 .popover {
   position: absolute;
-  left: 72%;
-  bottom: -180px;
+  left: 71%;
+  bottom: -100px;
   width: 320px;
   padding: 20px;
   color: #FFFFFF;
@@ -745,10 +754,10 @@ a {
   top: 20px;
   left: -60px;
   z-index: 1;
-  width: 1160px;
+  width: 1100px;
   min-height: 150px;
   padding-top: 30px;
-  padding-right: 20px;
+  padding-left: 60px;
   background-color: #FFE17F;
 }
 
@@ -790,7 +799,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   background: #FFE17F;
-  padding-left: 40px;
+  padding-left: 48px;
   width: 359px;
   height: 40px;
   color: #000000;
@@ -830,7 +839,7 @@ a {
 
 .search-icon {
   position: absolute;
-  left: 70px;
+  left: 76px;
   top: 56px;
   border: none;
   background-color: #FFE17F;
@@ -863,7 +872,7 @@ a {
   flex-direction: row;
   width: 1160px;
   margin: 0 auto;
-
+  height: 480px;
 }
 
 .slide-active {
@@ -874,18 +883,26 @@ a {
 
 .device-about {
   position: relative;
-  top: -30px;
+  top: -27px;
   display: flex;
   flex-direction: column;
   width: 560px;
+  height: 400px;
+}
+
+.device-description {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  min-width: 560px;
 }
 
 .about-drone {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
-  gap: 20px;
+  padding-top: 56px;
+  gap: 10px;
 }
 
 .wrapper {
@@ -899,7 +916,7 @@ a {
 .slide-picture {
   position: relative;
   top: -150px;
-  right: 30px;
+  right: 2px;
 }
 
 /* открытие слайдов */
@@ -925,7 +942,7 @@ a {
   position: absolute;
   top: 274px;
   right: 110px;
-  font-family: 'Rubik bold', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 180px;
@@ -939,7 +956,7 @@ a {
 
 .slide-left {
   position: relative;
-  bottom: 300px;
+  bottom: 290px;
   left: -540px;
   border: none;
   background-color: #ffffff;
@@ -947,8 +964,8 @@ a {
 
 .slide-right {
   position: relative;
-  bottom: 370px;
-  left: 540px;
+  bottom: 360px;
+  left: 535px;
   border: none;
   background-color: #ffffff
 }
@@ -983,7 +1000,7 @@ a {
   justify-content: end;
   margin: 0;
   padding: 0;
-  gap: 20px;
+  gap: 10px;
   list-style-type: none;
 }
 
@@ -1005,8 +1022,8 @@ a {
 /* .slider-pagination-button:before {
   content: "";
   position: absolute;
-  top: 289px;
-  left: 487px;
+  top: 253px;
+  left: 483px;
   width: 16px;
   height: 16px;
   outline: 2px solid #AF4FFF;
@@ -1024,6 +1041,9 @@ a {
   outline-offset: 1px;
 }
 
+/* .slider-pagination-button:focus::before{
+  display: block;
+} */
 .slider-pagination-button:active {
   opacity: 0.3;
 
@@ -1058,6 +1078,8 @@ a {
   font-size: 36px;
   line-height: 30px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -1082,12 +1104,18 @@ h2 {
 }
 
 h3 {
-  font-family: "Rubik bold", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 /* device catalog */
@@ -1142,7 +1170,9 @@ li .catalog-picture :hover {
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000000;
-  text-align: center;
+  text-align: left;
+  margin: 0;
+  padding-top: 32px;
 }
 
 .catalog-picture {
@@ -1198,10 +1228,11 @@ li .catalog-picture :hover {
 
 .delivery {
   position: relative;
-  padding-top: 70px;
-  background-image: linear-gradient(to bottom, #ffffff 155px, #F0F0F0 60px);
+  padding-top: 100px;
+  background-image: linear-gradient(to bottom, #ffffff 185px, #F0F0F0 60px);
   z-index: 1;
   margin: 0 auto;
+
 }
 
 .delivery-wrapper {
@@ -1209,7 +1240,7 @@ li .catalog-picture :hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 116px;
+  gap: 120px;
   width: 1160px;
   margin: 0 auto;
 }
@@ -1226,8 +1257,12 @@ li .catalog-picture :hover {
   list-style: none;
 }
 
+.services-control:nth-child(1) {
+  padding-top: 25px;
+}
+
 .services-control:not(:last-child) {
-  margin-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .buttons-delivery-control {
@@ -1236,8 +1271,14 @@ li .catalog-picture :hover {
   margin: 0;
 }
 
+.delivery-title {
+  position: relative;
+  top: -10px;
+}
+
 .service-list {
   list-style: none;
+  padding: 0;
 }
 
 .delivery-inf {
@@ -1249,9 +1290,7 @@ li .catalog-picture :hover {
 }
 
 .delivery-description {
-
   padding-top: 5px;
-
 }
 
 .bar-logo {
@@ -1261,8 +1300,8 @@ li .catalog-picture :hover {
 
 .delivery-img {
   position: absolute;
-  right: 20px;
-  top: 65px;
+  left: 960px;
+  top: 60px;
 }
 
 /* end delivery section */
@@ -1275,7 +1314,7 @@ li .catalog-picture :hover {
   max-width: 1160px;
   width: 1160px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 125px;
   margin-bottom: 70px;
 }
 
@@ -1304,8 +1343,7 @@ li .catalog-picture :hover {
 .car-delivery {
   width: 125px;
   height: 100px;
-  left: 0px;
-  top: 0px;
+
   background: #FFE17F;
 }
 
@@ -1326,7 +1364,7 @@ li .catalog-picture :hover {
   display: flex;
 
   padding-top: 26px;
-  padding-left: 60px;
+  padding-left: 40px;
 
   opacity: 0.6;
 }
@@ -1348,7 +1386,7 @@ li .catalog-picture :hover {
   flex-direction: row;
   flex-wrap: nowrap;
   margin-top: 70px;
-  gap: 160px;
+  gap: 110px;
   width: 1160px;
   margin: 0 auto;
 }
@@ -1375,18 +1413,24 @@ li .catalog-picture :hover {
 .transport-company {
   display: flex;
   flex-direction: column;
-  font-family: 'Rubik bold', sans-serif;
+  font-family: 'Rubik', sans-serif;
   letter-spacing: -0.02em;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+  padding-left: 30px;
 }
 
 .transport-company-list {
   height: 20px;
   padding-bottom: 20px;
+}
+
+.transport-company-name {
+  padding: 0;
+  padding-left: 5px;
 }
 
 .circle {
@@ -1402,7 +1446,21 @@ li .catalog-picture :hover {
 .about-description {
   margin: 0;
   padding: 0;
-  padding-top: 48px;
+  padding-top: 49px;
+}
+
+.about-description-add {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.about-description-address {
+  margin: 0;
+}
+
+.contact-title {
+  padding-top: 28px;
+  padding-bottom: 20px;
 }
 
 .about-description-time {
@@ -1432,13 +1490,18 @@ li .catalog-picture :hover {
   color: #FFC700;
 }
 
+.transport-company {
+  margin: 0;
+  padding-top: 5px;
+}
+
 /* end about us and contacts */
 
 
 .subscribe {
   position: relative;
   margin-top: 70px;
-  padding-top: 64px;
+  padding-top: 76px;
   padding-bottom: 1px;
   background-color: #F0F0F0;
 
@@ -1453,12 +1516,13 @@ li .catalog-picture :hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
 }
 
 .subscribe-title {
   width: 348px;
   margin: 0;
+  padding: 0;
 }
 
 .subscribe-form {
@@ -1484,7 +1548,7 @@ li .catalog-picture :hover {
   background: #F0F0F0;
   padding-left: 40px;
   width: 557px;
-  height: 40px;
+  height: 63px;
   color: #000000;
   border: none;
   border-bottom: 3px solid #C4C4C4;
@@ -1512,12 +1576,13 @@ li .catalog-picture :hover {
 
 .green-tick {
   position: relative;
-  left: 105px;
+  left: 175px;
   bottom: -25px;
+  padding-right: 10px;
 }
 
 .subscribe-free {
-  padding-left: 120px;
+  padding-left: 180px;
 }
 
 /* footer */
@@ -1529,8 +1594,8 @@ li .catalog-picture :hover {
   line-height: 20px;
   color: #FFFFFF;
   background: #444444;
-  padding-top: 32px;
-
+  padding-top: 59px;
+  padding-bottom: 77px;
 }
 
 .page-footer-container {
@@ -1551,7 +1616,8 @@ li .catalog-picture :hover {
 }
 
 .add-text {
-
+  margin: 0;
+  padding-top: 6px;
   padding-bottom: 34px;
 }
 
@@ -1559,7 +1625,7 @@ li .catalog-picture :hover {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  padding-left: 30px;
+
 }
 
 .footer-logo:hover {
@@ -1567,7 +1633,7 @@ li .catalog-picture :hover {
 }
 
 .footer-bar {
-  padding-bottom: 77px;
+  padding-top: 30px;
 }
 
 .footer-logo {
@@ -1596,7 +1662,7 @@ li .catalog-picture :hover {
   flex-direction: row;
   align-items: center;
   gap: 35px;
-  padding-top: 36px;
+  padding-top: 23px;
 }
 
 .device-promise-txt:hover {
@@ -1643,7 +1709,7 @@ li .catalog-picture :hover {
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 149px;
-  padding-top: 30px;
+  padding-top: 60px;
   gap: 15px;
   list-style: none;
 }
@@ -1652,15 +1718,15 @@ li .catalog-picture :hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 86px;
-  margin-left: 60px;
+  padding-top: 76px;
+  margin-left: 80px;
 }
 
 .footer-contacts-address-phone {
   display: block;
   text-decoration-line: underline;
   color: #FFFFFF;
-  margin-bottom: 45px;
+  margin-bottom: 59px;
   width: 175px;
 }
 
@@ -1678,8 +1744,12 @@ li .catalog-picture :hover {
 }
 
 .html-logo {
+  position: relative;
+  top: 3px;
+  left: 63px;
   display: block;
   width: 113px;
+
 }
 
 .html-logo:hover path {
@@ -1808,7 +1878,7 @@ input.user-email:disabled {
   flex-direction: column;
   width: 360px;
   margin-bottom: 60px;
-  font-family: 'Rubik bold', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1883,9 +1953,6 @@ input.user-email:disabled {
   text-align: center;
 }
 
-
-
-
 .modal-title {
   display: block;
   padding-left: 80px;
@@ -1904,7 +1971,6 @@ input.user-email:disabled {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-
 }
 
 .button-modal::before {
